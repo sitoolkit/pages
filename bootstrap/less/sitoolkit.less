@@ -1,0 +1,167 @@
+/*
+ * SI-Toolkit Theme
+ */
+
+@jumbotron-font-family: "AxisStd-ExtraLight";
+@navbar-default-toggle-icon-bar-bg : @body-bg;
+
+body {
+  margin-top: @navbar-height;
+}
+
+section {
+  padding: 42px 0 @navbar-height;
+}
+
+footer {
+  background-color: @brand-primary;
+  text-align: center;
+  color: @body-bg;
+  font-size: @font-size-small;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  width: 20px;
+  height : 3px;
+  border-radius:@border-radius-base;
+  .box-shadow(0 2px 0 rgba(0, 0, 0, 0.25));
+}
+
+.jumbotron {
+  font-family: @jumbotron-font-family;
+  
+  h1 {
+    text-align: center;
+    line-height: @line-height-base;
+    letter-spacing: 5px;
+    margin-top : 50px;
+    margin-bottom : 50px;
+  }
+
+  p {
+    margin-bottom : 50px;
+    text-align: center;
+    line-height: ceil((@jumbotron-font-size * 2));
+  }
+  
+  p:nth-last-of-type(1) {
+    margin-bottom: 30px;
+  }
+}
+
+@media(min-width:470px) {
+  .main-copy-br {
+    display:none;
+  }
+}
+
+.blue-back {
+  background-color: @brand-primary;
+}
+
+.section-line(@bg-color) {
+  border: none;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  background-color: @bg-color;
+}
+
+.section-triangle(@color : @brand-primary) {
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top: 15px solid @color;
+  border-right: 15px solid @color;
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  opacity: 0.9;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;  
+}
+
+.area(@color-1, @color-2) {
+  background-color: @color-1;
+
+  > hr:nth-child(even) {
+    .section-line(@color-1);
+  }
+
+  > hr:nth-child(odd) {
+    .section-line(@color-2);
+  }
+  
+  > div:nth-child(4) {
+    .section-triangle(@color-2);
+  }
+
+  h1,h2,h3,h4 {
+    color: @color-2;
+  }
+  
+  a {
+    color: @color-2;
+  }
+}
+
+.area-on {
+  .area(@brand-primary, @body-bg);
+
+  color : @body-bg;
+}
+
+.area-off {
+  .area(@body-bg, @brand-primary);
+}
+
+.tool-img {
+  padding : 0 80px;
+}
+
+@media (max-width:990px) {
+  .tool-img {
+    padding : 40px 50px 0 50px;
+  }
+}
+
+
+ul.list {
+  font-size: @font-size-large;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-col-left {
+  padding-bottom : 40px;
+}
+
+.contact-send {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tool-feature {
+  font-size: @font-size-large;
+
+  li {
+    padding-bottom: @padding-large-vertical;
+    padding-left: @padding-large-horizontal;
+  }
+
+  .glyphicon {
+    color : @brand-primary;
+    margin-right: @padding-large-horizontal;
+  }
+}
+
+.dl-margin {
+  font-size : @font-size-large;
+  > dt {
+    margin-top: 25px;
+  }
+ 
+  > dd {
+    margin-top:5px;
+  }
+}
