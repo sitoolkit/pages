@@ -18,10 +18,13 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css"></link>
   <link rel="stylesheet" href="css/bootstrap-theme.min.css"></link>
-<!--
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css"></link>
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css"></link>
+  <!--
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css"></link>
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css"></link>
 -->
+  <link rel="stylesheet" href="css/swiper.css"></link>
 
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -58,7 +61,7 @@
 
   <div id="top" class="jumbotron">
     <div class="container">
-      <h1>SIを加速する<br class="main-copy-br"/>開発ツール</h1>
+      <h1>SIを加速する<br class="main-copy-br" />開発ツール</h1>
       <p>SI-Toolkitはシステム開発の定常的な手作業を自動化し、システムの迅速な開発と継続的な改善を可能にする開発ツールです。
       </p>
       <p>
@@ -75,8 +78,12 @@
         <script>
           !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
         </script>
-        <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fsitoolkit.org%2F&width=72&layout=button&action=recommend&size=small&show_faces=false&share=false&height=65&appId" width="72" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-        <a href="http://b.hatena.ne.jp/entry/http://sitoolkit.org/" class="hatena-bookmark-button" data-hatena-bookmark-title="SI-Toolkit" data-hatena-bookmark-layout="standard-noballoon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+        <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fsitoolkit.org%2F&width=72&layout=button&action=recommend&size=small&show_faces=false&share=false&height=65&appId"
+          width="72" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        <a href="http://b.hatena.ne.jp/entry/http://sitoolkit.org/" class="hatena-bookmark-button" data-hatena-bookmark-title="SI-Toolkit"
+          data-hatena-bookmark-layout="standard-noballoon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20"
+            style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js"
+          charset="utf-8" async="async"></script>
         <br/>
         <a class="github-button" href="https://github.com/sitoolkit" aria-label="Follow @sitoolkit on GitHub">Follow @sitoolkit</a>
         <a class="github-button" href="https://github.com/sitoolkit/sit-ad-archetype-javaee7-web" data-icon="octicon-star" aria-label="Star sitoolkit/sit-ad-archetype-javaee7-web on GitHub">Star SIT-AD</a>
@@ -98,7 +105,7 @@
           <p>SI-Toolkit for Application Development(SIT-AD)は継続的デリバリーを前提としたJava EE Webアプリケーション開発用のMavenアーキタイプです。 DBMSやAPサーバー、DBマイグレーションツール、自動テストツールが、インストール不要ですぐに使える状態でセットアップされています。
             ツール群はMavenコマンド1つで実行できるため、JenkinsなどのCIツール上で動作させるのも簡単です。 SIT-ADの詳細な情報はこちらを参照してください。
           </p>
-          <a href="https://github.com/sitoolkit/sit-ad-archetype-javaee7-web/wiki">SIT-ADの機能と特徴</a>
+          <a href="https://github.com/sitoolkit/sit-ad-archetype-javaee7-web/wiki">SIT-ADの詳細</a>
         </div>
         <div class="col-md-7 tool-img">
           <img src="img/tool_sit-ad.png" class="img-responsive" />
@@ -111,14 +118,90 @@
             ブラウザの操作エンジンにはSelenium、Appiumを使用しているため、 EdgeやChrome、Firefox、iOS、Androidなど、Selenium、Appiumが対応している全てのブラウザをテストできます。
             SIT-WTの詳細な情報はこちらを参照してください。
           </p>
-          <a href="https://github.com/sitoolkit/sit-ad-archetype-javaee7-web/wiki">SIT-WTの機能と特徴</a>
+          <a href="https://github.com/sitoolkit/sit-ad-archetype-javaee7-web/wiki">SIT-WTの詳細</a>
         </div>
         <div class="col-md-7 tool-img">
           <img src="img/tool_sit-wt.png" class="img-responsive" />
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-12 feature-slide">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="img-responsive" src="img/slider/sit_wt/sit-wt_s1.png" />
+                <div class="title" data-swiper-parallax="-100">
+                  <h2>セットアップが簡単</h2>
+                </div>
+                <div class="text" data-swiper-parallax="-300">
+                  <p>SIT-WTはMavenのビルドプロセスに統合されているため、MavenとFirefoxがあればすぐにテストを実行することができます。
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="img-responsive" src="img/slider/sit_wt/sit-wt_s2.png" />
+                <div class="title" data-swiper-parallax="-100">
+                  <h2>動作可能なサンプルを提供</h2>
+                </div>
+                <div class="text" data-swiper-parallax="-300">
+                  <p>サンプルのテストスクリプトとWebページを提供しているため、操作方法や動作をすぐに試すことができます。
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="img-responsive" src="img/slider/sit_wt/sit-wt_s3.png" />
+                <div class="title" data-swiper-parallax="-100">
+                  <h2>テストスクリプトの作成が簡単</h2>
+                </div>
+                <div class="text" data-swiper-parallax="-300">
+                  <p>テストスクリプトはExcelまたはCSVで作成します。作成にプログラミングスキルは不要で、データパターンの複製も簡単です。 Selenium IDEで記録したスクリプトから変換して作成することもできます。
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="img-responsive" src="img/slider/sit_wt/sit-wt_s4.png" />
+                <div class="title" data-swiper-parallax="-100">
+                  <h2>可読性の高いエビデンスを自動取得</h2>
+                </div>
+                <div class="text" data-swiper-parallax="-300">
+                  <p>操作内容と操作項目に赤枠がついたスクリーンショットをエビデンスとして自動で取得するため、
+                    手動テストで最も手間と時間のかかっていた作業を削減できます。
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="img-responsive" src="img/slider/sit_wt/sit-wt_s5.png" />
+                <div class="title" data-swiper-parallax="-100">
+                  <h2>マルチブラウザ/マルチデバイス対応</h2>
+                </div>
+                <div class="text" data-swiper-parallax="-300">
+                  <p>ブラウザの操作にはSelenium、Appiumを使用しているため、
+                    これらが対応しているブラウザ、デバイスでテストが実行できます。
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="img-responsive" src="img/slider/sit_wt/sit-wt_s6.png" />
+                <div class="title" data-swiper-parallax="-100">
+                  <h2>並列実行に対応</h2>
+                </div>
+                <div class="text" data-swiper-parallax="-300">
+                  <p>コマンドにオプションを付けるだけで複数のテストを並列に実行することができます。
+                    より多くのテストを短い時間で実行することができます。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
+
+
   <div class="area-on">
     <hr/>
     <hr/>
@@ -224,6 +307,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script src="js/script.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
