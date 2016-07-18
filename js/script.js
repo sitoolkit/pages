@@ -23,12 +23,13 @@ var swiper = new Swiper('.swiper-container', {
     paginationClickable: true,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    touchRatio: 0.6,
+    touchRatio: 0.3,
     parallax: true,
     calculateHeight: true,
     autoResize: true,
     resizeReInit: true,
     speed: 700,
     loop: true,
-    autoplay: 15000
+    autoplay: 15000,
+    spaceBetween : 50
 });

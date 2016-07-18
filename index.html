@@ -18,12 +18,10 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css"></link>
   <link rel="stylesheet" href="css/bootstrap-theme.min.css"></link>
-  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css"></link>
-  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css"></link>
   <!--
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css"></link>
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css"></link>
--->
+  -->
   <link rel="stylesheet" href="css/swiper.css"></link>
 
   <!--[if lt IE 9]>
@@ -102,13 +100,78 @@
       <h3 id="sit-ad">SI-Toolkit for Application Development</h3>
       <div class="row">
         <div class="col-md-5">
-          <p>SI-Toolkit for Application Development(SIT-AD)は継続的デリバリーを前提としたJava EE Webアプリケーション開発用のMavenアーキタイプです。 DBMSやAPサーバー、DBマイグレーションツール、自動テストツールが、インストール不要ですぐに使える状態でセットアップされています。
+          <p>SI-Toolkit for Application Development(SIT-AD)はJava EE WebアプリケーションのMavenアーキタイプです。
+            DBMSやAPサーバー、DBマイグレーションツール、自動テストツールが、インストール不要ですぐに使える状態でセットアップされています。
             ツール群はMavenコマンド1つで実行できるため、JenkinsなどのCIツール上で動作させるのも簡単です。 SIT-ADの詳細な情報はこちらを参照してください。
           </p>
           <a href="https://github.com/sitoolkit/sit-ad-archetype-javaee7-web/wiki">SIT-ADの詳細</a>
         </div>
         <div class="col-md-7 tool-img">
           <img src="img/tool_sit-ad.png" class="img-responsive" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 feature-slide">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="img-responsive" src="img/slider/sit-ad/sit-ad_s1.png" />
+                <div class="title" data-swiper-parallax="-100">
+                  <h2>5分でプログラミング開始</h2>
+                </div>
+                <div class="text" data-swiper-parallax="-300">
+                  SIT-ADのアーキタイプはミドルウェアのセットアップスクリプトやJSF、JPAの設定を同梱しているため、
+                  環境構築はすぐに終わりソースコードの実装に着手できます。
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="panel panel-default">
+                  <div class="row panel-body supported-tools">
+                    <ul class="col-md-5 col-sm-5">
+                      <li>DB2</li>
+                      <li>Derby</li>
+                      <li>MySQL</li>
+                      <li>Oracle DB</li>
+                    </ul>
+                    <ul class="col-md-7 col-sm-7">
+                      <li>Payara</li>
+                      <li>WebSphere Liberty</li>
+                      <li>Wildfly</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="title" data-swiper-parallax="-100">
+                  <h2>主要なミドルウェアに対応</h2>
+                </div>
+                <div class="text" data-swiper-parallax="-300">
+                  Java EEのアプリケーションで使用する主要なDBMS、APサーバーに対応しています。
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="img-responsive" src="img/slider/sit-ad/sit-ad_s3.png" />
+                <div class="title" data-swiper-parallax="-100">
+                  <h2>強力な開発ツールがセットアップ済み</h2>
+                </div>
+                <div class="text" data-swiper-parallax="-300">
+                  ソースコード解析、End-to-End自動テスト、DBマイグレーションなど、
+                  省力化に欠かせない開発ツールがセットアップ済ですぐに使えます。
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img class="img-responsive" src="img/slider/sit-ad/sit-ad_s4.png" />
+                <div class="title" data-swiper-parallax="-100">
+                  <h2>CI / CD First</h2>
+                </div>
+                <div class="text" data-swiper-parallax="-300">
+                  ミドルウェアや開発ツールの操作はコマンド1つで実行できるため、
+                  JenkinsなどのCIツールでビルドパイプラインがすぐに構築できます。
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+          </div>
         </div>
       </div>
       <h3 id="sit-wt">SI-Toolkit for Web Testing</h3>
@@ -125,11 +188,11 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12 feature-slide">
+        <div class="col-md-10 col-md-offset-1 feature-slide">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="img-responsive" src="img/slider/sit_wt/sit-wt_s1.png" />
+                <img class="img-responsive" src="img/slider/sit-wt/sit-wt_s1.png" />
                 <div class="title" data-swiper-parallax="-100">
                   <h2>セットアップが簡単</h2>
                 </div>
@@ -139,7 +202,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img class="img-responsive" src="img/slider/sit_wt/sit-wt_s2.png" />
+                <img class="img-responsive" src="img/slider/sit-wt/sit-wt_s2.png" />
                 <div class="title" data-swiper-parallax="-100">
                   <h2>動作可能なサンプルを提供</h2>
                 </div>
@@ -149,7 +212,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img class="img-responsive" src="img/slider/sit_wt/sit-wt_s3.png" />
+                <img class="img-responsive" src="img/slider/sit-wt/sit-wt_s3.png" />
                 <div class="title" data-swiper-parallax="-100">
                   <h2>テストスクリプトの作成が簡単</h2>
                 </div>
@@ -159,7 +222,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img class="img-responsive" src="img/slider/sit_wt/sit-wt_s4.png" />
+                <img class="img-responsive" src="img/slider/sit-wt/sit-wt_s4.png" />
                 <div class="title" data-swiper-parallax="-100">
                   <h2>可読性の高いエビデンスを自動取得</h2>
                 </div>
@@ -170,7 +233,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img class="img-responsive" src="img/slider/sit_wt/sit-wt_s5.png" />
+                <img class="img-responsive" src="img/slider/sit-wt/sit-wt_s5.png" />
                 <div class="title" data-swiper-parallax="-100">
                   <h2>マルチブラウザ/マルチデバイス対応</h2>
                 </div>
@@ -181,7 +244,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <img class="img-responsive" src="img/slider/sit_wt/sit-wt_s6.png" />
+                <img class="img-responsive" src="img/slider/sit-wt/sit-wt_s6.png" />
                 <div class="title" data-swiper-parallax="-100">
                   <h2>並列実行に対応</h2>
                 </div>

@@ -135,6 +135,7 @@
   touch-action: pan-x;
 }
 /* Arrows */
+/*
 .swiper-button-prev,
 .swiper-button-next {
   background: #1A8CD6;
@@ -152,6 +153,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+*/
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
   opacity: 0.35;
@@ -199,6 +201,7 @@
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   z-index: 10;
+  margin-top:10px;
 }
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
