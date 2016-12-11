@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SI-Toolkitはシステム開発の定常的な手作業を自動化し、システムの迅速な開発と継続的な改善を可能にする開発ツールです。" />
+  <meta name="keywords" content="SIToolkit,SITOOLKIT,si toolkit,monocrea,モノクレア" />
+  <meta property="og:title" content="SI-Toolkit" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://sitoolkit.org/img/ogp_image.png" />
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:url" content="http://sitoolkit.org" />
+  <title>SI-Toolkit</title>
+
+  <script type="text/javascript" src="http://fast.fonts.net/jsapi/b57f3f6e-5f62-43e1-afc1-057635649e3e.js"></script>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css?20160718"></link>
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css?20160718"></link>
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <link rel="icon" type="image/vnd.microsoft.icon" href="./favicon.ico" />
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./favicon.ico" />
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#top" style="position:absolute;"><img src="img/logo_w.png" alt="SI-Toolkit" class="img-responsive" width="289" height="31"></a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-link" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-link">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#実行環境">実行環境</a></li>
+          <li><a href="#セットアップ">ダウンロード</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">サンプル<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#サンプルテストの実行">サンプルテストの実行</a></li>
+              <li><a href="#デバッグ実行">デバッグ実行</a></li>
+              <li><a href="#並列実行">並列実行</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">テストスクリプト作成<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#ブラウザ操作を記録する">ブラウザ操作を記録する</a></li>
+              <li><a href="#ブラウザで表示中のページから生成する">ブラウザで表示中のページから生成する</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="top" class="jumbotron">
+    <div class="container">
+      <h1>SI-Toolkit for Web Testing</h1>
+      <p>現場の"いいね"が詰まった<br class="main-copy-br" />自動テストツールです。</p>
+      <div class="row">
+        <ul class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-3 list">
+          <li><span class="glyphicon glyphicon-thumbs-up text-primary" aria-hidden="true"></span>プログラミング不要</li>
+          <li><span class="glyphicon glyphicon-thumbs-up text-primary" aria-hidden="true"></span>エビデンス自動取得</li>
+        </ul>
+        <ul class="col-xs-offset-1 col-xs-11 col-md-4 list">
+          <li><span class="glyphicon glyphicon-thumbs-up text-primary" aria-hidden="true"></span>マルチブラウザ・デバイス対応</li>
+          <li><span class="glyphicon glyphicon-thumbs-up text-primary" aria-hidden="true"></span>テストスクリプト自動生成</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="area-off">
+    <hr/>
+    <hr/>
+    <hr/>
+    <div></div>
+    <section class="container">
+      <h3 id="実行環境">実行環境</h3>
+
+      <p>SI-Toolkit for Web Testing(SIT-WT)はWindowsまたはMac OS X上で動作します。またいずれのOSでも<a href="https://java.com/ja/download/">Java (Version 8以上)</a> が必要です。</p>
+
+
+
+      <h3 id="ダウンロード">ダウンロード</h3>
+      <p>以下のURLからjarファイルをダウンロードします。</p>
+
+      <p><a href="https://raw.githubusercontent.com/wiki/sitoolkit/sit-wt-all/content/sit-wt-app-2.0-SNAPSHOT.jar">Download</a></p>
+
+
+
+      <h3 id="サンプルテストの実行">サンプルテストの実行</h3>
+
+      <div class="row">
+        <div class="col-md-5">
+
+          <p>ダウンロードしたjarファイルをダブルクリックで実行します。 SIT-WTが起動し、フォルダを選択する画面が表示されます。</p>
+
+        </div>
+        <p class="col-md-7">
+          <img alt="プロジェクト選択画面" src="img/sit-wt/select-project-dirctory.png" class="img-responsive img-thumbnail">
+        </p>
+      </div>
+
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-md-4">
+          プロジェクトを作成したいフォルダを選択するとSIT-WTの画面が表示されます。画面上のツールバーのボタンでSIT-WTの各機能を実行します。 画面左のツリーはプロジェクト内のファイルとフォルダを表示します。画面右のテキストエリアは機能の実行ログを表示します。
+        </div>
+        <p class="col-md-8">
+          <img alt="プロジェクトを開いた画面" src="img/sit-wt/project-opened.png" class="img-responsive img-thumbnail">
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <p>ツールバーの<img src="img/sit-wt/ic_play_circle_outline_black_18dp_1x.png" alt="サンプル起動ボタン">ボタンをクリックするとサンプルのWebサイトが起動します。
+            サンプルWebサイトには以下のURLでアクセスできます。
+          </p>
+
+          <p><a href="http://localhost:8280/input.html">http://localhost:8280/input.html</a></p>
+        </div>
+        <p class="col-md-8">
+          <img src="img/sit-wt/sample-page.png" alt="サンプル画面" class="img-responsive img-thumbnail">
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <p>
+            サンプルのテストスクリプト(SampleTestScript.xlsx)がtestscriptフォルダにに出力されています。 画面左のツリーでSampleTestScript.xlsxを右クリックし「開く」を選択するとテストスクリプトを開くことができます。</p>
+
+          <p>テストスクリプトの詳細な仕様はGitHubのWiki
+            <a href="https://github.com/sitoolkit/sit-wt-all/wiki/%E3%83%86%E3%82%B9%E3%83%88%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E4%BB%95%E6%A7%98">テストスクリプトの仕様</a>            ページを参照してください。
+          </p>
+        </div>
+        <p class="col-md-8">
+          <img src="img/sit-wt/sample-testscript.png" alt="サンプルのテストスクリプト" class="img-responsive img-thumbnail">
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <p>サンプルスクリプトを選択し、ツールバーの<img src="img/sit-wt/ic_play_arrow_black_18dp_1x.png" alt="テスト実行ボタン">ボタンをクリックします。 セレクトボックスで選択したブラウザでテストが実行されます(*1)。テスト実行が終了するとエビデンスが表示されます。
+          </p>
+          <ul>
+            <li>*1 ieを選択する場合は別途<a href="https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver#required-configuration">こちらの設定(2つ目以降)</a>が必要です。</li>
+          </ul>
+        </div>
+        <p class="col-md-8">
+          <img src="img/sit-wt/sample-evidence.png" alt="サンプルエビデンス" class="img-responsive img-thumbnail">
+        </p>
+      </div>
+
+
+      <h3 id="デバッグ実行">デバッグ実行</h3>
+
+      <p>画面左のツリーでtestscript/SampleTestScript.xlsxを選択し、
+        <img src="img/sit-wt/ic_bug_report_black_18dp_1x.png" alt="デバッグ実行ボタン">をクリックします。</p>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th align="center">ボタン</th>
+            <th>動作説明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center"><img src="img/sit-wt/ic_pause_black_18dp_1x.png" alt="一時停止"></td>
+            <td>テスト実行を一時停止します。</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="img/sit-wt/ic_play_arrow_black_18dp_1x.png" alt="再開"></td>
+            <td>テスト実行を再開します。</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="img/sit-wt/ic_skip_previous_black_18dp_1x.png" alt="戻る"></td>
+            <td>テストステップを1つ戻します。</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="img/sit-wt/ic_skip_next_black_18dp_1x.png" alt="進む"></td>
+            <td>次のテストステップを実行します。</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="img/sit-wt/ic_file_download_black_18dp_1x.png" alt="生成"></td>
+            <td>表示中のページのテストスクリプトを作成します。</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="img/sit-wt/ic_search_black_18dp_1x.png" alt="ロケーターチェック"></td>
+            <td>表示中のページ内で指定されたロケーターに一致する要素を表示します。</td>
+          </tr>
+          <tr>
+            <td align="center"><img src="img/sit-wt/ic_stop_black_18dp_1x.png" alt="停止"></td>
+            <td>テスト実行を終了します。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3 id="並列実行">並列実行</h3>
+
+      <p>画面左のツリーでtestscript/SampleTestScript.xlsxを選択し、
+        <img src="img/sit-wt/ic_fast_forward_black_18dp_1x.png" alt="並列実行ボタン">をクリックします。 SampleTestScript.xlsxには以下の様に001と002の2つのテストケースが定義されていますが、
+        <img src="img/sit-wt/ic_fast_forward_black_18dp_1x.png" alt="並列実行ボタン">はこれら２ケースを同時に実行します。</p>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th align="center">#</th>
+            <th>項目名</th>
+            <th>操作</th>
+            <th>ケース_001</th>
+            <th>ケース_002</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center">1</td>
+            <td>開始URL</td>
+            <td>click</td>
+            <td>y</td>
+            <td>y</td>
+          </tr>
+          <tr>
+            <td align="center">2</td>
+            <td>名前</td>
+            <td>input</td>
+            <td>試験太郎</td>
+            <td>試験花子</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+
+
+  <div class="area-off">
+    <hr/>
+    <hr/>
+    <hr/>
+    <div></div>
+    <section class="container">
+      <h3 id="テストスクリプトの作成方法">テストスクリプトの作成方法</h3>
+
+      <ul>
+        <li>ブラウザ操作を記録する</li>
+        <li>ブラウザで表示中のページから生成する</li>
+      </ul>
+
+      <h3 id="ブラウザ操作を記録する">ブラウザ操作を記録する</h3>
+
+      <p>SIT-WTはSelenium IDEで記録したテストスクリプトを実行できます。 この機能の使用方法は以下の通りです。
+      </p>
+
+      <ol>
+        <li>SIT-WTで<img src="img/sit-wt/ic_fiber_manual_record_black_18dp_1x.png" alt="スクリプト記録ボタン">をクリックします。<br> Firefoxが起動します。(*1)
+        </li>
+        <li>Firefoxで「ツール」メニュー＞Selenium IDEを選択し、Selenium IDEを起動します。</li>
+        <li>Firefoxを操作すると操作内容がスクリプトに記録されます。(*2)</li>
+        <li>スクリプトを保存します。「ファイル」メニュー＞「テストケースを保存」を選択
+
+          <ul>
+            <li>保存場所：プロジェクト直下のtestscriptディレクトリ</li>
+            <li>ファイル形式：HTML</li>
+          </ul>
+        </li>
+        <li>SIT-WTでSelenium IDEのスクリプトを選択し、<img src="img/sit-wt/ic_play_arrow_black_18dp_1x.png" alt="テスト実行ボタン">をクリックします。<br>          テストの実行、エビデンスの作成が通常のSIT-WTのスクリプトと同じように行われます。
+        </li>
+      </ol>
+
+      <p>*1 Firefox、およびSelenium IDEは自動でダウンロード、インストールされます。<br> *2 Selenium IDEの使用方法は<a href="http://www.seleniumhq.org/docs/02_selenium_ide.jsp">こちら</a>を参照してください。</p>
+
+      <h3 id="ブラウザで表示中のページから生成する">ブラウザで表示中のページから生成する</h3>
+
+      <p>SIT-WTはブラウザで表示中のページのHTMLを解析しテストスクリプトを自動で生成できます。 この機能の使用方法は以下の通りです。
+      </p>
+
+      <ol>
+        <li>SIT-WTで<img src="img/sit-wt/ic_file_download_black_18dp_1x.png" alt="スクリプト生成ボタン">をクリックします。<br> セレクトボックスで選択しているブラウザが起動します。
+        </li>
+        <li>ブラウザを操作してスクリプトを生成したいページを表示します。</li>
+        <li>SIT-WTで<img src="img/sit-wt/ic_file_download_black_18dp_1x.png" alt="スクリプト生成ボタン">をクリックします。<br> 表示中のページをテストするためのスクリプトが生成され、表示されます。(*1)
+
+          <ul>
+            <li>生成場所：プロジェクト直下のpagescriptディレクトリ</li>
+            <li>ファイル名：[ページのタイトル].xlsx</li>
+          </ul>
+        </li>
+        <li>生成されたスクリプトは他のスクリプトからinclude操作で使用できます。(*2) また、スクリプトをpagescriptディレクトリに移動し通常のスクリプトとしても使用できます。
+        </li>
+      </ol>
+
+      <p>*1 テストスクリプト(.xlsx)を開くアプリケーションはOSの設定に従います。<br> *2 include操作については<a href="%E3%83%86%E3%82%B9%E3%83%88%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E4%BB%95%E6%A7%98#include">テストスクリプトの仕様</a>を参照してください。</p>
+
+    </section>
+  </div>
+
+
+  <footer>
+    Copyright 2016 Monocrea, Inc. All Rights Reserved.
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="js/script.js?20160718"></script>
+
+</body>
+
+</html>
