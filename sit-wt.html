@@ -42,21 +42,21 @@
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse-link">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#実行環境">実行環境</a></li>
-          <li><a href="#セットアップ">ダウンロード</a></li>
+          <li><a href="#runtime">実行環境</a></li>
+          <li><a href="#download">ダウンロード</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">サンプル<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#サンプルテストの実行">サンプルテストの実行</a></li>
-              <li><a href="#デバッグ実行">デバッグ実行</a></li>
-              <li><a href="#並列実行">並列実行</a></li>
+              <li><a href="#sampleTest">サンプルテストの実行</a></li>
+              <li><a href="#debug">デバッグ実行</a></li>
+              <li><a href="#parallel">並列実行</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">テストスクリプト作成<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#ブラウザ操作を記録する">ブラウザ操作を記録する</a></li>
-              <li><a href="#ブラウザで表示中のページから生成する">ブラウザで表示中のページから生成する</a></li>
+              <li><a href="#recordOperation">ブラウザ操作を記録する</a></li>
+              <li><a href="#generateFromPage">ブラウザで表示中のページから生成する</a></li>
             </ul>
           </li>
         </ul>
@@ -87,20 +87,20 @@
     <hr/>
     <div></div>
     <section class="container">
-      <h3 id="実行環境">実行環境</h3>
+      <h3 id="runtime">実行環境</h3>
 
       <p>SI-Toolkit for Web Testing(SIT-WT)はWindowsまたはMac OS X上で動作します。またいずれのOSでも<a href="https://java.com/ja/download/">Java (Version 8以上)</a> が必要です。</p>
 
 
 
-      <h3 id="ダウンロード">ダウンロード</h3>
+      <h3 id="download">ダウンロード</h3>
       <p>以下のURLからjarファイルをダウンロードします。</p>
 
       <p><a href="https://raw.githubusercontent.com/wiki/sitoolkit/sit-wt-all/content/sit-wt-app-2.0-SNAPSHOT.jar">Download</a></p>
 
 
 
-      <h3 id="サンプルテストの実行">サンプルテストの実行</h3>
+      <h3 id="sampleTest">サンプルテストの実行</h3>
 
       <div class="row">
         <div class="col-md-5">
@@ -163,7 +163,7 @@
       </div>
 
 
-      <h3 id="デバッグ実行">デバッグ実行</h3>
+      <h3 id="debug">デバッグ実行</h3>
 
       <p>画面左のツリーでtestscript/SampleTestScript.xlsxを選択し、
         <img src="img/sit-wt/ic_bug_report_black_18dp_1x.png" alt="デバッグ実行ボタン">をクリックします。</p>
@@ -207,7 +207,7 @@
         </tbody>
       </table>
 
-      <h3 id="並列実行">並列実行</h3>
+      <h3 id="parallel">並列実行</h3>
 
       <p>画面左のツリーでtestscript/SampleTestScript.xlsxを選択し、
         <img src="img/sit-wt/ic_fast_forward_black_18dp_1x.png" alt="並列実行ボタン">をクリックします。 SampleTestScript.xlsxには以下の様に001と002の2つのテストケースが定義されていますが、
@@ -258,7 +258,7 @@
         <li>ブラウザで表示中のページから生成する</li>
       </ul>
 
-      <h3 id="ブラウザ操作を記録する">ブラウザ操作を記録する</h3>
+      <h3 id="recordOperation">ブラウザ操作を記録する</h3>
 
       <p>SIT-WTはSelenium IDEで記録したテストスクリプトを実行できます。 この機能の使用方法は以下の通りです。
       </p>
@@ -281,7 +281,7 @@
 
       <p>*1 Firefox、およびSelenium IDEは自動でダウンロード、インストールされます。<br> *2 Selenium IDEの使用方法は<a href="http://www.seleniumhq.org/docs/02_selenium_ide.jsp">こちら</a>を参照してください。</p>
 
-      <h3 id="ブラウザで表示中のページから生成する">ブラウザで表示中のページから生成する</h3>
+      <h3 id="generateFromPage">ブラウザで表示中のページから生成する</h3>
 
       <p>SIT-WTはブラウザで表示中のページのHTMLを解析しテストスクリプトを自動で生成できます。 この機能の使用方法は以下の通りです。
       </p>
