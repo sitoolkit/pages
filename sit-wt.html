@@ -302,64 +302,119 @@
 
       <h3 id="recordOperation">ブラウザ操作を記録する</h3>
 
-      <p>SIT-WTはSelenium IDEで記録したテストスクリプトを実行できます。 この機能の使用方法は以下の通りです。
-      </p>
+      <div class="row">
+        <div class="col-md-4">
+          <p>
+            SIT-WTのツールバーで<img src="img/sit-wt/ic_fiber_manual_record_black_18dp_1x.png" alt="スクリプト記録ボタン">ボタンをクリックします。<br>Firefoxが起動します(*2)。
+          </p>
+          <ul>
+            <li>*2 Firefox、およびSelenium IDEは自動でダウンロード、インストールされます。</li>
+          </ul>
+        </div>
+        <p class="col-md-8">
+          <img src="img/sit-wt/firefox-blank-page.png"  class="img-responsive img-thumbnail" />
+        </p>
+      </div>
 
-      <p>
-        SIT-WTのツールバーで<img src="img/sit-wt/ic_fiber_manual_record_black_18dp_1x.png" alt="スクリプト記録ボタン">ボタンをクリックします。<br> Firefoxが起動します。(*1)
-      </p>
+      <div class="row">
+        <p class="col-md-4">
+          Firefoxで「ALT」キー＞「ツール」メニュー＞Selenium IDEを選択し、Selenium IDEを起動します。
+        </p>
+        <p class="col-md-6">
+          <img src="img/sit-wt/start-selenium-ide.png" style="width:250px;" class="img-thumbnail" />
+        </p>
+      </div>
 
-      <p>
-        Firefoxで「ツール」メニュー＞Selenium IDEを選択しSelenium IDEを起動します。
-      </p>
+      <div class="row">
+        <div class="col-md-4">
+          <p>
+            Selenium IDEの再生ボタンがONの状態でFirefoxを操作すると操作内容がスクリプトに記録されます(*3)。
+          </p>
+          <ul>
+            <li>*3 Selenium IDEの使用方法は<a href="http://www.seleniumhq.org/docs/02_selenium_ide.jsp">こちら</a>を参照してください。</li>
+          </ul>
+        </div>
+        <p class="col-md-8">
+          <img src="img/sit-wt/record-browser-operation-on-tabelog.png"  class="img-responsive img-thumbnail" />
+        </p>
+      </div>
 
-      <p>
-        Selenium IDEの再生ボタンがONの状態でFirefoxを操作すると操作内容がスクリプトに記録されます。(*2)
-      </p>
+      <div class="row">
+        <div class="col-md-4">
+          <p>
+            Selenium IDEの「ファイル」メニュー＞「テストケースを保存」を選択しスクリプトを保存します。
+          </p>
+          <ul>
+            <li>保存場所：プロジェクト直下のtestscriptディレクトリ</li>
+            <li>ファイルの種類：HTML ファイル</li>
+          </ul>
+        </div>
+        <p class="col-md-8">
+          <img src="img/sit-wt/save-selenium-ide-script.png"  class="img-responsive img-thumbnail" />
+        </p>
+      </div>
 
-      <p>
-        「ファイル」メニュー＞「テストケースを保存」を選択しスクリプトを保存します。
-      </p>
-      <ul>
-        <li>保存場所：プロジェクト直下のtestscriptディレクトリ</li>
-        <li>ファイル形式：HTML</li>
-      </ul>
-
-      <p>
-        SIT-WTでSelenium IDEのスクリプトを選択し、<img src="img/sit-wt/ic_play_arrow_black_18dp_1x.png" alt="テスト実行ボタン">をクリックします。<br>        テストの実行、エビデンスの作成が通常のSIT-WTのスクリプトと同じように行われます。
-      </p>
-
-      <p>*1 Firefox、およびSelenium IDEは自動でダウンロード、インストールされます。<br> *2 Selenium IDEの使用方法は<a href="http://www.seleniumhq.org/docs/02_selenium_ide.jsp">こちら</a>を参照してください。</p>
-
+      <div class="row">
+        <p class="col-md-4">
+          SIT-WTでSelenium IDEのスクリプトを選択し、<img src="img/sit-wt/ic_play_arrow_black_18dp_1x.png" alt="テスト実行ボタン">をクリックします。<br> テストの実行、エビデンスの作成が通常のSIT-WTのスクリプトと同じように行われます。
+        </p>
+        <p class="col-md-6">
+          <img src="img/sit-wt/select-selenium-ide-script.png" style="width:250px;" class="img-thumbnail" />
+        </p>
+      </div>
 
 
       <h3 id="generateFromPage">ブラウザで表示中のページから生成する</h3>
 
-      <p>SIT-WTはブラウザで表示中のページのHTMLを解析しテストスクリプトを自動で生成できます。 この機能の使用方法は以下の通りです。
-      </p>
+      <div class="row">
+        <p class="col-md-4">
+          SIT-WTで<img src="img/sit-wt/ic_file_download_black_18dp_1x.png" alt="スクリプト生成ボタン">をクリックします。<br> セレクトボックスで選択しているブラウザが起動します。
+        </p>
+        <p class="col-md-8">
+          <img src="img/sit-wt/chrome-blank-page.png" class="img-responsive img-thumbnail">
+        </p>
+      </div>
 
-      <p>
-        SIT-WTで<img src="img/sit-wt/ic_file_download_black_18dp_1x.png" alt="スクリプト生成ボタン">をクリックします。<br> セレクトボックスで選択しているブラウザが起動します。
-      </p>
+      <div class="row">
+        <p class="col-md-4">
+          ブラウザを操作してスクリプトを生成したいページを表示します。
+        </p>
+        <p class="col-md-8">
+          <img src="img/sit-wt/open-target-page-on-his.png" alt="サンプル画面" class="img-responsive img-thumbnail">
+        </p>
+      </div>
 
-      <p>
-        ブラウザを操作してスクリプトを生成したいページを表示します。
-      </p>
+      <div class="row">
+        <div class="col-md-4">
+          <p>
+            SIT-WTで<img src="img/sit-wt/ic_file_download_black_18dp_1x.png" alt="スクリプト生成ボタン">をクリックします。<br> 表示中のページをテストするためのスクリプトが生成され、表示されます(*4)。
+          </p>
+          <ul>
+            <li>生成場所：プロジェクト直下のpagescriptディレクトリ</li>
+            <li>ファイル名：[ページのタイトル].xlsx</li>
+          </ul>
+          <ul>
+            <li>*4 テストスクリプト(.xlsx)を開くアプリケーションはOSの設定に従います。</li>
+          </ul>
+        </div>
+        <p class="col-md-8">
+          <img src="img/sit-wt/created-new-pagescript-his.png" class="img-responsive img-thumbnail">
+        </p>
+      </div>
 
-      <p>
-        SIT-WTで<img src="img/sit-wt/ic_file_download_black_18dp_1x.png" alt="スクリプト生成ボタン">をクリックします。<br> 表示中のページをテストするためのスクリプトが生成され、表示されます。(*1)
-      </p>
-
-      <ul>
-        <li>生成場所：プロジェクト直下のpagescriptディレクトリ</li>
-        <li>ファイル名：[ページのタイトル].xlsx</li>
-      </ul>
-
-      <p>
-        生成されたスクリプトは他のスクリプトからinclude操作で使用できます。(*2) また、スクリプトをpagescriptディレクトリに移動し通常のスクリプトとしても使用できます。
-      </p>
-
-      <p>*1 テストスクリプト(.xlsx)を開くアプリケーションはOSの設定に従います。<br> *2 include操作については<a href="https://github.com/sitoolkit/sit-wt-all/wiki/%E3%83%86%E3%82%B9%E3%83%88%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E4%BB%95%E6%A7%98#include%E6%93%8D%E4%BD%9C">テストスクリプトの仕様</a>を参照してください。</p>
+      <div class="row">
+        <div class="col-md-4">
+          <p>
+            生成されたスクリプトは他のスクリプトからinclude操作で使用できます(*5)。また、スクリプトをtestscriptディレクトリに移動し通常のスクリプトとしても使用できます。
+          </p>
+          <ul>
+            <li>*5 include操作については<a href="https://github.com/sitoolkit/sit-wt-all/wiki/%E3%83%86%E3%82%B9%E3%83%88%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E4%BB%95%E6%A7%98#include%E6%93%8D%E4%BD%9C">テストスクリプトの仕様</a>を参照してください。</li>
+          </ul>
+        </div>
+        <p class="col-md-8">
+          <img src="img/sit-wt/include-pagescript-his.png" class="img-responsive img-thumbnail">
+        </p>
+      </div>
 
     </section>
   </div>
